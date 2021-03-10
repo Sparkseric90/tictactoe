@@ -18,20 +18,38 @@ Objects:
 
 INIT:
 -The board
+-pulls in the functions used in the JS to generate the gameboard.
 
-
+let body = document.getElementById('body')
+body.className = 'container';
 
 Function Gameboard()
-    row
-    -col-4
+
+When the grid is pulled up, make each tile within6, row and col clickable
+
+
+
+    let buttonRow = buildElement('div', 'row', '', '');
+    let buttonCol = buildElement('div', 'col-6 text-center mx);
+    buttonRow.appendChild(buttonRow);
+    buttonCol.appendChild(buttonCol);
+    
+    
 
 Function Game()
-    how to implement game pieces 
-
+    how to implement game pieces (stretch goal: using icons)
+    if X === then X wins
+    if 0 === then 0 wins
 
 
 Function Restart()
-    button to restart the game after a tie or win
+Display a button to restart the game;
+    function restartGame(){
+        state = 0;
+        body.innerHTML = '';
+        buildGame();
+        gameOver = False;
+    }
 
 Functions:
 -Generate a board with 3x3 rows/columns
@@ -41,7 +59,7 @@ Functions:
 
 Events:
 -Click listener that can tell which row or column has been selected for mouse click.
--End of game Popup stating who won the game.
+-Text that states whos won, or who's turn it is.
 
 ---------------------------------------
 
