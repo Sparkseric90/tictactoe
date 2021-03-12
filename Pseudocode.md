@@ -51,9 +51,10 @@ Display a button to restart the game;
         gameOver = False;
     }
 
-Functions:
--Generate a board with 3x3 rows/columns
--winning possibilities? Some kind of equation that figures this?
+function buildGame()
+let mainRow = buildElement ('div",)
+let mainCol = buildElement ('div')
+
 
 
 
