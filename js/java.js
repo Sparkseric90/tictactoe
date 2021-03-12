@@ -12,7 +12,7 @@ function buildElement(elementType, classes, id, htmlContent) {
     return element;
 }
 
-//
+//function that starts to build the game board.
 function buildGame() {
     state = 0;
     //Declaring my HTML elements to be called and using bootstrap to stylize them
