@@ -1,0 +1,9 @@
+#gamerow {
+    max-width: 30rem;
+    height: 20vh;
+    max-height: 40rem;
+}
+
+html, body {
+    background-color: rgb(48, 55, 63);
+}
